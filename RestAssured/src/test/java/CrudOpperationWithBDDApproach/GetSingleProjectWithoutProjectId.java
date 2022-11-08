@@ -1,0 +1,27 @@
+package CrudOpperationWithBDDApproach;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+public class GetSingleProjectWithoutProjectId {
+	@Test
+
+	public void getproject() {
+	    
+		   given()
+			
+		  .contentType(ContentType.JSON)
+				//actions
+		     	.when()
+				.get("http://rmgtestingserver:8084/projects")
+		         //validation
+		       .then()
+		       .statusCode(200)
+		       .log().all();
+
+}
+}
+//passed :it will give all the projects created
