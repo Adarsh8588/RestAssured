@@ -4,18 +4,24 @@ public class empdetailswithobject  {
 	String ename;
 	String eid;
 	String[] mailid;
+	int[] phoneNo;
 	int salary;
 	Object spouse;
 	
 	//create a constructor for initilazition
-	public empdetailswithobject(String ename, String eid, String[] mailid, int salary) {
+	public empdetailswithobject(String ename, String eid, String[] mailid,int[] phoneNo, int salary) {
 		//super();
 		this.ename = ename;
 		this.eid = eid;
 		this.mailid = mailid;
 		this.salary = salary;
+		this.phoneNo=phoneNo;
 	}
-	//create getters and setters
+	public empdetailswithobject() {
+		
+	}
+	
+	//  create getters and setters
 	public String getEname() {
 		return ename;
 	}
@@ -33,6 +39,12 @@ public class empdetailswithobject  {
 	}
 	public void setMailid(String[] mailid) {
 		this.mailid = mailid;
+	}
+	public int[] getphoneNo() {
+		return phoneNo;
+	}
+	public void setphoneNo(int[] phoneNo) {
+		this.phoneNo = phoneNo;
 	}
 	public int getSalary() {
 		return salary;

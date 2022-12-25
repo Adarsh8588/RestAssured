@@ -1,7 +1,6 @@
-package serializationAndDeserialization;
+package Deserilization;
 
 import java.io.File;
-import java.io.IOException;
 
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;

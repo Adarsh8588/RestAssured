@@ -1,4 +1,4 @@
-package serializationAndDeserialization;
+package serialization;
 
 import org.testng.annotations.Test;
 

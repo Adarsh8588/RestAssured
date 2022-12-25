@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import DiffWaysToPostReq.PojoClassForCreate;
-import GenericLibraries.JavaUtility;
+import GenericLibraries.javaUtility;
 import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.*;
@@ -14,7 +14,7 @@ public class DataProviderr{
 	@Test(dataProvider="get data")
 	
 	public void dataprov(String createdBy, String projectName, String status, int teamSize) {
-	JavaUtility jlib = new JavaUtility();
+	javaUtility jlib = new javaUtility();
 	PojoClassForCreate cp = new PojoClassForCreate(createdBy, projectName+jlib.randomnum(),status,teamSize);
 	
 	given().body(cp).contentType(ContentType.JSON)
